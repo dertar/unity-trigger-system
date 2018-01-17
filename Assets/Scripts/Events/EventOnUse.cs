@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Character;
 using System;
 
 namespace Trigger
@@ -42,7 +41,7 @@ namespace Trigger
             }
             else
             {
-                var subject = whoTriggered.GetComponent<Subject>();
+                var subject = whoTriggered.GetComponent<SimpleController>();
                 subject.Used();
                 //whoTriggered.BroadcastMessage("Used");
                 Log("It's used");
